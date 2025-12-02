@@ -1,0 +1,25 @@
+nav{
+    padding-left: 70px;
+    padding-right: 30px;
+    // flex-direction: column;
+    .nav_top{
+        height: 45px;
+        @include myDisplay(flex, row,  center, space-between, none);
+         .top_left{
+            width: 500px;
+            @include myDisplay(flex, none,  center, none, 20px);
+            color: rgb(255, 254, 254); 
+            }        
+       
+    }
+    .nav_bar{
+        @include myDisplay(flex, none,  center, space-between, none);
+        .links a{
+            color: rgb(67, 90, 82);
+            text-decoration: none;
+        }
+    
+    }
+}
+
+
