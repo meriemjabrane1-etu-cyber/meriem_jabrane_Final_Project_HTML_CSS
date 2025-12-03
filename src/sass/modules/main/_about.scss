@@ -1,0 +1,43 @@
+.about{
+    width: 99vw;
+    height: 70vh;
+    background-color: rgb(251, 244, 235);
+    padding: 0px 40px;
+    @include myDisplay(flex, none,  center, space-between, none);
+    img{
+        width: 60%;
+        
+    }
+    .dix{
+        width: 50%;
+        height: 300px;
+        background-color: black;
+        
+    }
+    .introduction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 20vw;
+        margin-top: 10vh;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+        }
+
+        .introduction img {
+            width: 50%;
+        }
+
+        .first-text {
+            display: flex;
+            gap: 0.5vw;
+        }
+
+        .text > p:nth-child(2) {
+            color: gray;
+        }
+    }
+}

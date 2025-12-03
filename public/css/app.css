@@ -11878,13 +11878,13 @@ nav .nav_top {
   gap: none;
 }
 nav .nav_top .top_left {
-  width: 500px;
+  width: 800px;
   display: flex;
   flex-direction: none;
   align-items: center;
   justify-content: none;
-  gap: 20px;
-  color: rgb(255, 254, 254);
+  gap: 40px;
+  color: rgb(255, 255, 255);
 }
 nav .nav_bar {
   display: flex;
@@ -11893,13 +11893,71 @@ nav .nav_bar {
   justify-content: space-between;
   gap: none;
 }
+nav .nav_bar .links {
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
 nav .nav_bar .links a {
-  color: rgb(67, 90, 82);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-.carousel_nav img {
-  height: 99vh;
+.carousel_nav .carousel-item .boxid {
+  top: 0px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+}
+.carousel_nav .carousel-item {
+  height: 90vh;
+}
+.carousel_nav .carousel-item img {
+  height: 90vh;
+}
+
+.about {
+  width: 99vw;
+  height: 70vh;
+  background-color: rgb(251, 244, 235);
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: none;
+}
+.about img {
+  width: 60%;
+}
+.about .dix {
+  width: 50%;
+  height: 300px;
+  background-color: black;
+}
+.about .introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20vw;
+  margin-top: 10vh;
+}
+.about .introduction .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.about .introduction .introduction img {
+  width: 50%;
+}
+.about .introduction .first-text {
+  display: flex;
+  gap: 0.5vw;
+}
+.about .introduction .text > p:nth-child(2) {
+  color: gray;
 }
 
 /*# sourceMappingURL=app.css.map */

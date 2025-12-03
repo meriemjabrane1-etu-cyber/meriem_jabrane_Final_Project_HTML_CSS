@@ -1,6 +1,17 @@
 .carousel_nav{
-    img{
-        height: 99vh;
+    .carousel-item{
+        .boxid{
+            top: 0px;
+            bottom: 0px;
+            right: 0;
+            left: 0;
         
+
+        }
+        height: 90vh;
+        img{
+            height: 90vh;
+            
+        }
     }
 }

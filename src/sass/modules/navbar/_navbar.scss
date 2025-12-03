@@ -6,16 +6,23 @@ nav{
         height: 45px;
         @include myDisplay(flex, row,  center, space-between, none);
          .top_left{
-            width: 500px;
-            @include myDisplay(flex, none,  center, none, 20px);
-            color: rgb(255, 254, 254); 
+            width: 800px;
+            @include myDisplay(flex, none,  center, none, 40px);
+            color: rgb(255, 255, 255); 
             }        
        
     }
     .nav_bar{
         @include myDisplay(flex, none,  center, space-between, none);
+        h1{
+            // color: rgb(57, 54, 54);
+        }
+        .links{
+           @include myDisplay(flex, none,  center, space-between, 20px); 
+        }
         .links a{
-            color: rgb(67, 90, 82);
+          
+            color: rgb(255, 255, 255);
             text-decoration: none;
         }
     
