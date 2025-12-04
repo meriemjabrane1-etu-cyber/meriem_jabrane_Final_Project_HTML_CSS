@@ -11871,6 +11871,10 @@ nav {
 }
 nav .nav_top {
   height: 45px;
+  background: rgba(0, 0, 0, 0.86);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11921,43 +11925,22 @@ nav .nav_bar .links a {
 .about {
   width: 99vw;
   height: 70vh;
-  background-color: rgb(251, 244, 235);
+  background-color: rgb(218, 213, 205);
   padding: 0px 40px;
   display: flex;
   flex-direction: none;
   align-items: center;
-  justify-content: space-between;
+  justify-content: none;
   gap: none;
 }
-.about img {
-  width: 60%;
+.about .left img {
+  width: 90%;
+  height: 500px;
+  margin-left: 40px;
 }
-.about .dix {
+.about .right {
   width: 50%;
-  height: 300px;
-  background-color: black;
-}
-.about .introduction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-inline: 20vw;
-  margin-top: 10vh;
-}
-.about .introduction .text {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-}
-.about .introduction .introduction img {
-  width: 50%;
-}
-.about .introduction .first-text {
-  display: flex;
-  gap: 0.5vw;
-}
-.about .introduction .text > p:nth-child(2) {
-  color: gray;
+  height: 90%;
 }
 
 /*# sourceMappingURL=app.css.map */
