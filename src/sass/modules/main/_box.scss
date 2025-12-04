@@ -1,0 +1,84 @@
+.box {
+    height: 600px;
+    @include myDisplay(flex, center, center, none, 10px);
+    flex-direction: column;
+
+    .sor {
+        @include myDisplay(flex, center, center, none, 10px);
+        flex-direction: column;
+        padding-top: 70px;
+        // border-radius: 10px;
+
+        a {
+            background-color: rgb(254, 223, 176);
+            color: $_yellow;
+            text-decoration: none;
+            padding: 7px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: default;
+        }
+
+        h2 {
+
+            font-weight: 400;
+            color: black;
+            letter-spacing: 1;
+            font-family: "Pacifico";
+
+            span {
+                color: $_yellow;
+            }
+        }
+    }
+
+    .bottom_us {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 100px;
+        column-gap: 15px;
+
+        .cont_box {
+            @include myDisplay(flex, flex-start, center, none, 5px);
+            flex-direction: column;
+            background-color: rgb(250, 250, 250);
+            height: 300px;
+            padding: 25px;
+            transition: 0.3s;
+
+            h2 {
+                color: $_yellow;
+                transition: 0.5s;
+            }
+
+            &:hover h2 {
+                color: white;
+            }
+
+            .p_1 {
+                font-weight: 500;
+                color: black;
+                letter-spacing: 1;
+                font-family: "Pacifico";
+                font-size: 24px;
+                transition: 0.5s;
+            }
+
+            .p_2 {
+                color: rgb(90, 90, 90);
+                transition: 0.5s;
+            }
+
+            &:hover {
+                background-color: $_yellow;
+                padding-bottom: 50px;
+            }
+
+            &:hover .p_2,
+            &:hover .p_1 {
+                color: white;
+            }
+        }
+    }
+}
