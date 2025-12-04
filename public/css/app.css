@@ -11953,16 +11953,10 @@ nav .nav_bar .links a {
   font-size: 20px;
 }
 
-.box {
-  height: 600px;
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  justify-content: none;
-  gap: 10px;
-  flex-direction: column;
+.Menu {
+  height: 900px;
 }
-.box .sor {
+.Menu .sor {
   display: flex;
   flex-direction: center;
   align-items: center;
@@ -11971,8 +11965,44 @@ nav .nav_bar .links a {
   flex-direction: column;
   padding-top: 70px;
 }
+.Menu .sor a {
+  background-color: rgb(250, 233, 208);
+  color: rgb(255, 176, 59);
+  text-decoration: none;
+  padding: 7px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: default;
+}
+.Menu .sor h2, .Menu .sor .h2 {
+  font-weight: 400;
+  color: rgb(31, 26, 26);
+  letter-spacing: 1;
+  font-family: "Pacifico";
+}
+.Menu .sor h2 span, .Menu .sor .h2 span {
+  color: rgb(255, 176, 59);
+}
+
+.box {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+}
+.box .sor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+  padding-top: 70px;
+}
 .box .sor a {
-  background-color: rgb(254, 223, 176);
+  background-color: rgb(250, 233, 208);
   color: rgb(255, 176, 59);
   text-decoration: none;
   padding: 7px 30px;

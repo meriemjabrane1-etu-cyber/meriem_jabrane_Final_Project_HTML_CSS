@@ -1,0 +1,34 @@
+.Menu{
+    height: 900px;
+    // background-color: aquamarine !important;
+
+     .sor {
+        @include myDisplay(flex, center, center, none, 10px);
+        flex-direction: column;
+        padding-top: 70px;
+        // border-radius: 10px;
+
+        a {
+            background-color: rgb(250, 233, 208);
+            color: $_yellow;
+            text-decoration: none;
+            padding: 7px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: default;
+        }
+
+        h2 {
+
+            font-weight: 400;
+            color: rgb(31, 26, 26);
+            letter-spacing: 1;
+            font-family: "Pacifico";
+
+            span {
+                color: $_yellow;
+            }
+        }
+    }
+}
