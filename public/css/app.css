@@ -11963,7 +11963,7 @@ nav .nav_bar .links a {
   justify-content: none;
   gap: 10px;
   flex-direction: column;
-  padding-top: 70px;
+  height: 20vh;
 }
 .Menu .sor a {
   background-color: rgb(250, 233, 208);
@@ -11984,6 +11984,18 @@ nav .nav_bar .links a {
 .Menu .sor h2 span, .Menu .sor .h2 span {
   color: rgb(255, 176, 59);
 }
+.Menu .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 10vh;
+  width: 99vw;
+}
+.Menu .link a {
+  text-decoration: none;
+  color: rgb(162, 160, 160);
+}
 .Menu .detai_menu {
   display: flex;
   flex-direction: row;
@@ -11998,6 +12010,10 @@ nav .nav_bar .links a {
 }
 .Menu .detai_menu .sect1 {
   width: 40%;
+}
+.Menu .detai_menu .sect1, .Menu .detai_menu .ser {
+  display: flex;
+  flex-direction: column;
 }
 .Menu .detai_menu .sect2 {
   width: 40%;
