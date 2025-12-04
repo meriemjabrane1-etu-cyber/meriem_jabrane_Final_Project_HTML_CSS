@@ -31,4 +31,21 @@
             }
         }
     }
+    .detai_menu{
+        @include myDisplay(flex, row, center, center, 10px);
+        // height: 40vh;
+       
+        div img{
+            width: 90px;
+            border-radius: 50%;
+            border: 8px solid rgb(235, 232, 232);
+        }
+        .sect1{ 
+            width: 40%;
+        }
+        .sect2{
+            
+            width: 40%;
+        }
+    }
 }

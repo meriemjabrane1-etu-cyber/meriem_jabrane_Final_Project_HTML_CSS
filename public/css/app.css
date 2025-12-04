@@ -11984,6 +11984,24 @@ nav .nav_bar .links a {
 .Menu .sor h2 span, .Menu .sor .h2 span {
   color: rgb(255, 176, 59);
 }
+.Menu .detai_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Menu .detai_menu div img {
+  width: 90px;
+  border-radius: 50%;
+  border: 8px solid rgb(235, 232, 232);
+}
+.Menu .detai_menu .sect1 {
+  width: 40%;
+}
+.Menu .detai_menu .sect2 {
+  width: 40%;
+}
 
 .box {
   height: 600px;
