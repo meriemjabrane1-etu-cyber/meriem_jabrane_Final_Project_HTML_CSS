@@ -11925,7 +11925,7 @@ nav .nav_bar .links a {
 .about {
   width: 99vw;
   height: 70vh;
-  background-color: rgb(218, 213, 205);
+  background-color: rgb(248, 238, 222);
   padding: 0px 40px;
   display: flex;
   flex-direction: none;
@@ -11941,6 +11941,17 @@ nav .nav_bar .links a {
 .about .right {
   width: 50%;
   height: 90%;
+}
+.about .list div {
+  display: flex;
+  flex-direction: none;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+}
+.about .list div i {
+  color: rgb(255, 176, 59);
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */

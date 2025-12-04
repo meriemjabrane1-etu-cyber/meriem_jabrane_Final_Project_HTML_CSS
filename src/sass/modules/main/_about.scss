@@ -1,7 +1,7 @@
 .about{
     width: 99vw;
     height: 70vh;
-    background-color: rgb(218, 213, 205);
+    background-color: rgb(248, 238, 222);
     padding: 0px 40px;
     @include myDisplay(flex, none,  center, none, none);
     .left img{
@@ -13,6 +13,13 @@
     .right{
         width: 50%;
         height: 90%;
+    }
+    .list div{
+        @include myDisplay(flex, none,  center, none, 10px);
+        i{
+            color: $_yellow;
+            font-size: 20px;
+        }
     }
 
 
