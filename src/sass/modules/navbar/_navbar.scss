@@ -1,9 +1,8 @@
-nav{
-    padding-left: 70px;
-    padding-right: 30px;
-    // flex-direction: column;
-    .nav_top{
+nav {
+
+    .nav_top {
         height: 45px;
+        padding: 0px 80px;
         // background-color: rgba(255, 255, 255, 0.4);
         // -webkit-backdrop-filter: blur(5px);
         // backdrop-filter: blur(5px);
@@ -11,27 +10,34 @@ nav{
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(7px);
-        @include myDisplay(flex, row,  center, space-between, none);
-         .top_left{
+        @include myDisplay(flex, row, center, space-between, none);
+
+        .top_left {
             width: 800px;
-            @include myDisplay(flex, none,  center, none, 40px);
-            color: rgb(255, 255, 255); 
-            }        
+            @include myDisplay(flex, none, center, none, 40px);
+            color: rgb(124, 119, 119);
+        }
 
     }
-    .nav_bar{
-        @include myDisplay(flex, none,  center, space-between, none);
-        
-        .links{
-           @include myDisplay(flex, none,  center, space-between, 20px); 
+
+    .nav_bar {
+        @include myDisplay(flex, none, center, space-between, none);
+        background: rgba(48, 46, 46, 0.86);
+        padding: 20px 80px;
+
+        h1 {
+            color: white;
         }
-        .links a{
-          
+
+        .links {
+            @include myDisplay(flex, none, center, space-between, 20px);
+        }
+
+        .links a {
+
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
 
     }
-}
-
-
+ }
