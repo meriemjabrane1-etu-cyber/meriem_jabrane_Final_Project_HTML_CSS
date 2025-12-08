@@ -1,0 +1,128 @@
+.form {
+    @include myDisplay(flex, none,none, none, 15px); // Assuming MyDisplay sets display:flex
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    .top-form {
+        @include myDisplay(flex, none,center, center, 10px);
+        flex-direction: column;
+        row-gap: 20px;
+        padding-top: 50px;
+
+
+        a {
+            background-color: rgb(255, 247, 235);
+            color: $_yellow;
+            text-decoration: none;
+            padding: 7px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: pointer; // changed from default for UX
+            transition: 0.3s ease; // added smooth hover
+            &:hover {
+                background-color: lighten(rgb(255, 247, 235), 10%);
+            }
+        }
+
+        h2 {
+            @include myrop(400, black, 1);
+            font-family: "Pacifico";
+            text-align: center;
+
+            span {
+                color: $_yellow;
+            }
+        }
+    }
+
+    .bottom-form {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        padding: 40px 80px;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            padding-inline: 20px;
+        }
+
+        .left-form {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+
+        .right-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(250, 250, 250);
+            row-gap: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            padding-top: 120px;
+
+            .top-inputs,
+            .mid-inputs {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                input {
+                    flex: 1 1 200px;
+                    width: 350px;
+                    height: 50px;
+                    padding: 0 20px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    transition: 0.3s;
+                    &:focus {
+                        border-color: $_yellow;
+                        outline: none;
+                    }
+                }
+            }
+
+            .last-inputs {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                row-gap: 20px;
+
+                textarea {
+                    width: 100%;
+                    max-width: 942px;
+                    height: 120px;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    resize: vertical;
+                    transition: 0.3s;
+                    &:focus {
+                        border-color: $_yellow;
+                        outline: none;
+                    }
+                }
+
+                button {
+                    padding: 12px 50px;
+                    border: none;
+                    color: $white;
+                    background-color: $_yellow;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: darken($_yellow, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
