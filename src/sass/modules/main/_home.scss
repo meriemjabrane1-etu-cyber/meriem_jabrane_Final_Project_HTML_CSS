@@ -1,5 +1,6 @@
 .carousel{     
     .carousel-item{
+        background: #000;
         .boxid{
             top: 0px;
             bottom: 0px;
@@ -9,7 +10,7 @@
     
         img{
             height: 90vh;
-            // width: 90vw;
+            width: 100%;
             
         }
     }

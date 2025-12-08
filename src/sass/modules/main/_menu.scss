@@ -1,73 +1,160 @@
-.Menu{
-    height: 900px;
-    // background-color: aquamarine !important;
+// .Menu{
+//     height: 900px;
 
-     .sor {
-        @include myDisplay(flex, center, center, none, 10px);
-        flex-direction: column;
-        // padding-top: 70px;
-        height: 20vh;
-        // border-radius: 10px;
 
-        a {
-            background-color: rgb(250, 233, 208);
-            color: $_yellow;
-            text-decoration: none;
-            padding: 7px 30px;
-            font-size: 13px;
-            font-weight: 600;
-            border-radius: 20px;
-            cursor: default;
-        }
+//      .sor {
+//         @include myDisplay(flex, center, center, none, 10px);
+//         flex-direction: column;
+
+//         height: 20vh;
+
+
+//         a {
+//             background-color: rgb(250, 233, 208);
+//             color: $_yellow;
+//             text-decoration: none;
+//             padding: 7px 30px;
+//             font-size: 13px;
+//             font-weight: 600;
+//             border-radius: 20px;
+//             cursor: default;
+//         }
+
+
+
+//         h2 {
+
+//             font-weight: 400;
+//             color: rgb(31, 26, 26);
+//             letter-spacing: 1;
+//             font-family: "Pacifico";
+
+//             span {
+//                 color: $_yellow;
+//             }
+//         }
+//     }
+//         .link{
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             gap: 12px;
+//             height: 10vh;
+//             width: 99vw;
+
+//         }
+//         .link a{
+//             text-decoration: none;
+//             color: rgb(162, 160, 160)
+//         }
+
+//     .detai_menu{
+//         @include myDisplay(flex, row, center, center, 10px);
+
+
+//         div img{
+//             width: 90px;
+//             border-radius: 50%;
+//             border: 8px solid rgb(235, 232, 232);
+//         }
+//         .sect1{ 
+//             width: 40%;
+//         }
+//         .sect1, .ser{
+//             display: flex;
+//             flex-direction: column;
+//         }
+//         .sect2{
+
+//             width: 40%;
+//         }
+
+//     }
+// }
+
+.menu-filters {
+  label {
+    cursor: pointer;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #999;
+    transition: color 0.3s;
 
     
+  }
 
-        h2 {
+  input[type="radio"] {
+    display: none;
 
-            font-weight: 400;
-            color: rgb(31, 26, 26);
-            letter-spacing: 1;
-            font-family: "Pacifico";
-
-            span {
-                color: $_yellow;
-            }
-        }
+    // 
+    &:checked + label {
+      color: orange;
+      font-weight: bolder;
     }
-        .link{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            height: 10vh;
-            width: 99vw;
-            
-        }
-        .link a{
-            text-decoration: none;
-            color: rgb(162, 160, 160)
-        }
-        
-    .detai_menu{
-        @include myDisplay(flex, row, center, center, 10px);
-        // height: 40vh;
-       
-        div img{
-            width: 90px;
-            border-radius: 50%;
-            border: 8px solid rgb(235, 232, 232);
-        }
-        .sect1{ 
-            width: 40%;
-        }
-        .sect1, .ser{
-            display: flex;
-            flex-direction: column;
-        }
-        .sect2{
-            
-            width: 40%;
-        }
+  }
 
+  .menu-items {
+    margin-top: 20px;
+
+    .item {
+      display: none; 
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 60px;
+        border-radius: 50%;
+      }
+
+      p {
+        margin: 0;
+        font-weight: 600;
+
+        span {
+          color: orange;
+          margin-left: 10px;
+        }
+      }
     }
+  }
+
+
+  // All
+  #all:checked ~ .menu-items {
+    .item {
+      display: flex;
+    }
+  }
+
+  // Starters
+  #starters:checked ~ .menu-items {
+    .item {
+      display: none;
+    }
+    .starters {
+      display: flex;
+    }
+  }
+
+  // Salads
+  #salads:checked ~ .menu-items {
+    .item {
+      display: none;
+    }
+    .salads {
+      display: flex;
+    }
+  }
+
+  // Specialty
+  #specialty:checked ~ .menu-items {
+    .item {
+      display: none;
+    }
+    .specialty {
+      display: flex;
+    }
+  }
 }

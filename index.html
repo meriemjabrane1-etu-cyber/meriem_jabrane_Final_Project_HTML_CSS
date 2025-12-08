@@ -28,7 +28,7 @@
 
         </div>
         <div class="nav_bar">
-            <h1>Delicious</h1>
+            <h1 class="logo">Delicious</h1>
             <div class="links">
                 <a href="">Home</a>
                 <a href="">About</a>
@@ -76,16 +76,14 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./public/images/Delicious/images/hero-carousel/hero-carousel-1.jpg" class="d-block w-100"
-                    alt="..." width="900vw">
+                <img src="./public/images/Delicious/images/hero-carousel/hero-carousel-1.jpg" class="d-block "
+                    alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="10000">
-                <img src="./public/images/Delicious/images/hero-carousel/hero-carousel-2.jpg" class="d-block w-100"
-                    alt="...">
+                <img src="./public/images/Delicious/images/hero-carousel/hero-carousel-2.jpg" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./public/images/Delicious/images/hero-carousel/hero-carousel-3.jpg" class="d-block w-100"
-                    alt="...">
+                <img src="./public/images/Delicious/images/hero-carousel/hero-carousel-3.jpg" class="d-block" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel_nav" data-bs-slide="prev">
@@ -189,140 +187,81 @@
     </section>
 
 
-    <!-- Menu -->
 
-    <section class="Menu">
-        <div class="sor">
-            <a href="">WHY US</a>
-            <h2>Check Our Tasty<span class="yellow">Menu</span></h2>
-        </div>
+    <div class="menu-filters">
 
-        <div class="link">
-            <a href="">All</a>
-            <a href="">Starters</a>
-            <a href="">Salads</a>
-            <a href="">Specialty</a>
-        </div>
-        <!-- les plate -->
-        <div id="link_menu" class="detai_menu">
+        <input type="radio" name="menu" id="all" checked hidden>
+        <input type="radio" name="menu" id="starters" hidden>
+        <input type="radio" name="menu" id="salads" hidden>
+        <input type="radio" name="menu" id="specialty" hidden>
 
 
-            <div class="sect1">
-                <div class="ser">
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/lobster-roll.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Lobster Bisque .............................................................
-                            <span>$5.95</span>
-                        </p>
-                    </div>
+        <label for="all">All</label>
+        <label for="starters">Starters</label>
+        <label for="salads">Salads</label>
+        <label for="specialty">Specialty</label>
 
-                </div>
-                <div class="ser">
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/bread-barrel.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Bread Barrel ................................................................
-                            <span>$6.95</span>
-                        </p>
-                    </div>
-                </div>
+        <div class="menu-items">
 
-                <div class="ser">
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/cake.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Crab Cake ...................................................................
-                            <span>$7.95</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="ser">
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/caesar.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Caesar Selections .............................................................
-                            <span>$8.95</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="ser">
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/tuscan-grilled.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Tuscan Grilled ................................................................
-                            <span>$6.95</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sect2">
-                <div>
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/mozzarella.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Mozzarella Stick ................................................................
-                            <span>$6.95</span>
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/greek-salad.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Greek Salad ..................................................................
-                            <span>$6.95</span>
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/spinach-salad.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Spinach Salad ................................................................
-                            <span>$6.95</span>
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./public/images/Delicious/images/menu/lobster-bisque.jpg" alt="">
-                    </div>
-                    <div>
-                        <p>
-                            Lobster Roll ................................................................
-                            <span>$6.95</span>
-
-                        </p>
-                    </div>
-
-                </div>
+            <div class="item starters">
+                <img src="./public/images/Delicious/images/menu/lobster-bisque.jpg" alt="Lobster Bisque">
+                <p>Lobster Bisque <span>$5.95</span></p>
             </div>
 
+            <div class="item starters">
+                <img src="./public/images/Delicious/images/menu/bread-barrel.jpg" alt="Bread Barrel">
+                <p>Bread Barrel <span>$6.95</span></p>
+            </div>
 
+            <div class="item starters">
+                <img src="./public/images/Delicious/images/menu/cake.jpg" alt="Crab Cake">
+                <p>Crab Cake <span>$7.95</span></p>
+            </div>
 
+            <div class="item salads">
+                <img src="./public/images/Delicious/images/menu/caesar.jpg" alt="Caesar Selections">
+                <p>Caesar Selections <span>$8.95</span></p>
+            </div>
 
+            <div class="item salads">
+                <img src="./public/images/Delicious/images/menu/tuscan-grilled.jpg" alt="Tuscan Grilled">
+                <p>Tuscan Grilled <span>$6.95</span></p>
+            </div>
 
+            <div class="item specialty">
+                <img src="./public/images/Delicious/images/menu/mozzarella.jpg" alt="Mozzarella Stick">
+                <p>Mozzarella Stick <span>$6.95</span></p>
+            </div>
 
+            <div class="item specialty">
+                <img src="./public/images/Delicious/images/menu/greek-salad.jpg" alt="Greek Salad">
+                <p>Greek Salad <span>$6.95</span></p>
+            </div>
+
+            <div class="item specialty">
+                <img src="./public/images/Delicious/images/menu/spinach-salad.jpg" alt="Spinach Salad">
+                <p>Spinach Salad <span>$6.95</span></p>
+            </div>
 
         </div>
-    </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- specials -->
 
