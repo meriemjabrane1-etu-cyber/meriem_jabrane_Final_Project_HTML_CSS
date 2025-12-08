@@ -1,0 +1,28 @@
+
+    .sor {
+        @include myDisplay(flex, column, center, none, 10px);
+        padding: 70px 50px;
+   
+        a {
+            background-color: rgb(250, 233, 208);
+            color: $_yellow;
+            text-decoration: none;
+            padding: 7px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: default;
+        }
+
+        h2 {
+
+            font-weight: 400;
+            color: rgb(31, 26, 26);
+            letter-spacing: 1;
+            font-family: "Pacifico";
+
+            span {
+                color: $_yellow;
+            }
+        }
+    }

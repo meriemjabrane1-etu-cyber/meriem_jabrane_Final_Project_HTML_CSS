@@ -1,85 +1,53 @@
-// .Menu{
-//     height: 900px;
 
-
-//      .sor {
-//         @include myDisplay(flex, center, center, none, 10px);
-//         flex-direction: column;
-
-//         height: 20vh;
-
-
-//         a {
-//             background-color: rgb(250, 233, 208);
-//             color: $_yellow;
-//             text-decoration: none;
-//             padding: 7px 30px;
-//             font-size: 13px;
-//             font-weight: 600;
-//             border-radius: 20px;
-//             cursor: default;
-//         }
-
-
-
-//         h2 {
-
-//             font-weight: 400;
-//             color: rgb(31, 26, 26);
-//             letter-spacing: 1;
-//             font-family: "Pacifico";
-
-//             span {
-//                 color: $_yellow;
-//             }
-//         }
-//     }
-//         .link{
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             gap: 12px;
-//             height: 10vh;
-//             width: 99vw;
-
-//         }
-//         .link a{
-//             text-decoration: none;
-//             color: rgb(162, 160, 160)
-//         }
-
-//     .detai_menu{
-//         @include myDisplay(flex, row, center, center, 10px);
-
-
-//         div img{
-//             width: 90px;
-//             border-radius: 50%;
-//             border: 8px solid rgb(235, 232, 232);
-//         }
-//         .sect1{ 
-//             width: 40%;
-//         }
-//         .sect1, .ser{
-//             display: flex;
-//             flex-direction: column;
-//         }
-//         .sect2{
-
-//             width: 40%;
-//         }
-
-//     }
-// }
 
 .menu-filters {
-  label {
-    cursor: pointer;
-    margin-right: 15px;
-    font-weight: bold;
-    color: #999;
-    transition: color 0.3s;
+   display: flex;
+    flex-direction: unset;
+    gap: 30px;
+  
+    .sor {
+        @include myDisplay(flex, column, center, none, 10px);
+        padding-top: 70px;
+   
+        a {
+            background-color: rgb(250, 233, 208);
+            color: $_yellow;
+            text-decoration: none;
+            padding: 7px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: default;
+        }
 
+        h2 {
+
+            font-weight: 400;
+            color: rgb(31, 26, 26);
+            letter-spacing: 1;
+            font-family: "Pacifico";
+
+            span {
+                color: $_yellow;
+            }
+        }
+    }
+
+//    .link {
+//     display: flex;
+//     height: 40px;
+//     background-color: aqua;
+    
+//    }
+
+   
+        label { 
+        cursor: pointer;
+        margin-right: 15px;
+        font-weight: bold;
+        color: #999;
+        transition: color 0.3s;
+        background-color: black;
     
   }
 
@@ -95,6 +63,7 @@
 
   .menu-items {
     margin-top: 20px;
+    background-color: antiquewhite;
 
     .item {
       display: none; 
@@ -104,7 +73,7 @@
       gap: 10px;
 
       img {
-        width: 60px;
+        width: 80px;
         border-radius: 50%;
       }
 

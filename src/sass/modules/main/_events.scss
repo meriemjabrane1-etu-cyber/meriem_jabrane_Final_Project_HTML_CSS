@@ -1,0 +1,199 @@
+#partyCarousel {
+    position: relative;
+    background-image: url(/public/images/Delicious/images/events-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        z-index: 1;
+    }
+
+    .carousel-inner {
+        position: relative;
+        z-index: 2;
+        height: 80vh;
+
+        .carousel-item {
+            height: 100%;
+
+            .carousel-caption {
+                position: static;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px 20px;
+            }
+        }
+
+        h3 {
+            border-bottom: 2px solid $_yellow;
+            width: fit-content;
+        }
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 20px;
+        z-index: 3;
+
+        [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $_yellow;
+        }
+    }
+}
+
+i {
+    color: $_yellow;
+}
+
+img {
+    filter: brightness(100%) !important;
+}
+
+@media (max-width: 768px) {
+    #partyCarousel {
+        height: 70vh;
+
+        .carousel-inner {
+            height: 70vh;
+            padding: 0 30px;
+
+            .carousel-item {
+                padding: 20px 0;
+
+                .carousel-caption {
+                    padding: 30px 15px;
+                }
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            ul {
+                font-size: 15px;
+                padding-left: 25px;
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 15px;
+
+            [data-bs-target] {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 8%;
+        }
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 426px) {
+    #partyCarousel {
+        height: 60vh;
+        background-position: center center;
+
+        &::before {
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .carousel-inner {
+            height: 60vh;
+            padding: 0 20px;
+
+            .carousel-item {
+                padding: 15px 0;
+
+                .carousel-caption {
+                    padding: 20px 10px;
+                    overflow-y: auto;
+                }
+            }
+
+            h3 {
+                font-size: 22px;
+                border-bottom-width: 1.5px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            ul {
+                font-size: 13px;
+                padding-left: 20px;
+
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 10px;
+
+            [data-bs-target] {
+                width: 8px;
+                height: 8px;
+                margin: 0 4px;
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%;
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    i {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
